@@ -1,4 +1,4 @@
 public interface Scanner {
-    public String getQrNumber();
-    public String getPicture();
+    public String getQrNummer();
+    public String getUnterschrift();
 }
