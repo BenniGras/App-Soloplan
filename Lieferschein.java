@@ -3,6 +3,8 @@ public class Lieferschein {
     Kunde kunde;
     Sender sender;
     Spedition spedition;
+    Unterschrift unterschriftSpedition;
+    Unterschrift unterschriftKunde;
 
     Lieferschein(int nummer, Kunde kunde, Sender sender, Spedition spedition) {
         this.nummer = nummer;

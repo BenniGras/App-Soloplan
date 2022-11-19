@@ -1,4 +1,4 @@
-public class Sender {
+public class Sender extends Vertragspartner {
     String name;
     Adresse adresse;
 

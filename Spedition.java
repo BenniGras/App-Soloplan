@@ -1,4 +1,4 @@
-public class Spedition {
+public class Spedition extends Vertragspartner {
     int nummer;    
     String name;
 
