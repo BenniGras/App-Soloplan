@@ -3,6 +3,10 @@ public class SimulationScanner implements Scanner {
         return 0;
     }
 
+    public int getQrNummer(int nummer) {
+        return nummer;
+    }
+
     public String getUnterschrift() {
         return "Unterschrift";
     }
