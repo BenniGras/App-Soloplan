@@ -31,7 +31,8 @@ public class Lieferschein {
                 "Sender: " + sender.toString() + "\n" +
                 "Spedition: " + spedition.toString() + "\n" +
                 "Unterschrift Spedition: " + untSped + "\n" +
-                "Unterschrift Kunde: " + untKund;
+                "Unterschrift Kunde: " + untKund + "\n" +
+                "---------------------------------";
     }
 
     public String formatLiefernummer() {
