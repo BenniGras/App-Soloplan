@@ -8,6 +8,9 @@ public class SimulationScanner implements ScannerInterface {
     }
 
     public Unterschrift getUnterschrift() {
-        return new Unterschrift(new Kunde(), "19.11.2022", "Jürgen Müller");
+        return new Unterschrift("Jürgen Müller", "19.11.2022");
+    }
+    public Unterschrift getUnterschrift(String u, String d) {
+        return new Unterschrift(u, d);
     }
 }

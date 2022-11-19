@@ -1,15 +1,14 @@
 public class Unterschrift {
-    Vertragspartner vertragspartner;
+    String unterschrift;    
     String datum;
-    String unterschrift;
 
-    Unterschrift(Vertragspartner vp, String datum, String unterschrift) {
-        this.vertragspartner = vp;
-        this.datum = datum;
+    Unterschrift(String unterschrift, String datum) {
         this.unterschrift = unterschrift;
+        this.datum = datum;
+        
     }
 
     public String toString() {
-        return datum + ", " + unterschrift + " (" + vertragspartner.toString() + ")";
+        return unterschrift + ", " + datum;
     }
 }
