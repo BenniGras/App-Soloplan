@@ -1,4 +1,4 @@
-public class QrScanner implements Scanner {
+public class SimulationScanner implements Scanner {
     public int getQrNummer() {
         return 0;
     }

@@ -1,4 +1,4 @@
-public class SoloplanAPI implements API {
+public class SimulationAPI implements API {
     public Lieferschein getLieferschein(int qrNumber) {
         Lieferschein lieferschein = createLieferschein();
         return lieferschein;

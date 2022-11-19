@@ -1,8 +1,8 @@
 public class App {
     
     public static void main(String[] args) {
-        SoloplanAPI api = new SoloplanAPI();
-        QrScanner scanner = new QrScanner();
+        API api = new SimulationAPI();
+        Scanner scanner = new SimulationScanner();
 
 
         int qrNumber = scanner.getQrNummer();
