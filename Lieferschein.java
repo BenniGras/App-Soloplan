@@ -1,10 +1,10 @@
 public class Lieferschein {
-    long nummer;
+    int nummer;
     Kunde kunde;
     Sender sender;
     Spedition spedition;
 
-    Lieferschein(long nummer, Kunde kunde, Sender sender, Spedition spedition) {
+    Lieferschein(int nummer, Kunde kunde, Sender sender, Spedition spedition) {
         this.nummer = nummer;
         this.kunde = kunde;
         this.sender = sender;

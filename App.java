@@ -1,12 +1,12 @@
 public class App {
     
     public static void main(String[] args) {
-        API api = new SimulationAPI();
-        Scanner scanner = new SimulationScanner();
+        APIInterface api = new SimulationAPI();
+        ScannerInterface scanner = new SimulationScanner();
 
-        long qrNumber = scanner.getQrNummer(1000000000000000L);
+        int[] qrNumber = scanner.getQrNummer(new int[]{000001,001,328648273,1});
         try {
-            Lieferschein ls = api.getLieferschein(qrNumber);
+            Lieferschein ls = api.getLieferschein(qrNumber[2]);
             System.out.println(ls.toString());
         } catch(NullPointerException ex) {
             System.out.println("Der Lieferschein konnte nicht gefunden werden.");

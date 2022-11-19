@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 
 public class LieferscheinDatenbank {
-    public Map<Long, Lieferschein> lieferscheinDB;
+    public Map<Integer, Lieferschein> lieferscheinDB;
 
 
     LieferscheinDatenbank() {
-        lieferscheinDB = new HashMap<Long, Lieferschein>();
+        lieferscheinDB = new HashMap<Integer, Lieferschein>();
     }
 
-    public Map<Long, Lieferschein> getDB() {
+    public Map<Integer, Lieferschein> getDB() {
         return this.lieferscheinDB;
     }
 }
