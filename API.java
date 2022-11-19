@@ -1,3 +1,3 @@
 public interface API {
-    public Lieferschein getLieferschein(int qrNumber);
+    public Lieferschein getLieferschein(long qrNumber);
 }

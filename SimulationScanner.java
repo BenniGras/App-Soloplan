@@ -1,9 +1,9 @@
 public class SimulationScanner implements Scanner {
-    public int getQrNummer() {
+    public long getQrNummer() {
         return 0;
     }
 
-    public int getQrNummer(int nummer) {
+    public long getQrNummer(long nummer) {
         return nummer;
     }
 

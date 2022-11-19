@@ -4,7 +4,7 @@ public class App {
         API api = new SimulationAPI();
         Scanner scanner = new SimulationScanner();
 
-        int qrNumber = scanner.getQrNummer(123432757);
+        long qrNumber = scanner.getQrNummer(1000000000000000L);
         try {
             Lieferschein ls = api.getLieferschein(qrNumber);
             System.out.println(ls.toString());

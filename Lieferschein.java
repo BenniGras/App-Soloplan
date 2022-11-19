@@ -1,10 +1,10 @@
 public class Lieferschein {
-    int nummer;
+    long nummer;
     Kunde kunde;
     Sender sender;
     Spedition spedition;
 
-    Lieferschein(int nummer, Kunde kunde, Sender sender, Spedition spedition) {
+    Lieferschein(long nummer, Kunde kunde, Sender sender, Spedition spedition) {
         this.nummer = nummer;
         this.kunde = kunde;
         this.sender = sender;
@@ -16,5 +16,9 @@ public class Lieferschein {
                 "Empfänger: " + kunde.toString() + "\n" +
                 "Sender: " + sender.toString() + "\n" +
                 "Spedition: " + spedition.toString();
+    }
+
+    public String formatLiefernummer() {
+        return "000000-00-0000000-0";
     }
 }
