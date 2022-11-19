@@ -2,7 +2,11 @@ public class App {
     
     public static void main(String[] args) {
         SoloplanAPI api = new SoloplanAPI();
-        Lieferschein ls = api.getLieferschein(0);
+        QrScanner scanner = new QrScanner();
+
+
+        int qrNumber = scanner.getQrNummer();
+        Lieferschein ls = api.getLieferschein(qrNumber);
         System.out.println(ls.toString());
     }
 }
