@@ -1,6 +1,9 @@
 public class App {
     
     public static void main(String[] args) {
+
+        Fenster fenster = new Fenster();
+
         ScannerInterface scanner = new SimulationScanner();
         APIInterface api = new SimulationAPI();
 
@@ -11,7 +14,6 @@ public class App {
             ls.addUnterschrift(unterschrift, qrNumber[3]);
             api.setLieferschein(ls);
 
-            System.out.println(ls.toString());
         } catch(NullPointerException ex) {
             System.out.println("Der Lieferschein konnte nicht gefunden werden.");
         } catch(IndexOutOfBoundsException ex) {
