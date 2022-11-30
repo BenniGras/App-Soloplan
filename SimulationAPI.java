@@ -24,9 +24,9 @@ public class SimulationAPI implements APIInterface {
         LieferscheinDatenbank dbObject = new LieferscheinDatenbank();
         Map<Integer, Lieferschein> db = dbObject.getDB();
 
-        db.put(3286482, createLieferschein(3286482,"Empfänger 1", "Sender 1", "Spedition 1"));
-        db.put(8678267, createLieferschein(8678267,"Empfänger 2", "Sender 2", "Spedition 2"));
-        db.put(7575656, createLieferschein(7575656,"Empfänger 3", "Sender 3", "Spedition 3"));
+        db.put(3286482, createLieferschein(3286482,"Bau GmbH", "Architekt", "ErdWagen"));
+        db.put(8678267, createLieferschein(8678267,"Backer GmbH", "Müller GmbH", "Mehl Transport"));
+        db.put(7575656, createLieferschein(7575656,"Geld AG", "Drucker KG", "SafeSpeed"));
         db.put(1234327, createLieferschein(1234327,"Empfänger 4", "Sender 4", "Spedition 4"));
         db.put(9876987, createLieferschein(9876987,"Empfänger 5", "Sender 5", "Spedition 5"));
 
